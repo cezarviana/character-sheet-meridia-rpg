@@ -13,6 +13,83 @@
     <main>
         <header class="header">
             <h1>Meridia RPG</h1>
+            
+            <div class="char-info">
+
+                <label for="player">Player Name</label>
+                <input type="text" class="player" id="player" value="Player">
+            
+                <label for="char-name">Character Name</label>
+                <input type="text" class="char-name" id="char-name" value="Character Name">
+            
+                <label for="gender">Character Gender</label>
+                <select name="gender" id="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="hermaphrodite">
+                        Hermaphrodite
+                        </option>
+                    <option value="other">Other</option>
+                </select>
+            
+                <label for="race">Race</label>
+                <select name="gender" id="gender">
+                    <option value="apeare">Apearé</option>
+                    <option value="canids">Canids</option>
+                    <option value="conitis">Conitis</option>
+                    <option value="dvarger">Dvarger</option>
+                    <option value="felins">Felins</option>
+                    <option value="hominis">Hominis</option>
+                    <option value="iauhrim">Iauhrim</option>
+                    <option value="jatte">Jatte</option>
+                    <option value="kelis">Kelis</option>
+                    <option value="morlocks">Morlocks</option>
+                    <option value="nestis">Nestis</option>
+                    <option value="orkus">Orkus</option>
+                    <option value="parvus">Parvus</option>
+                    <option value="simis">Simis</option>
+                    <option value="talos">Talos</option>
+                    <option value="tayir">Tayir</option>
+                    <option value="treow">Treow</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="char-skin">Skin</label>
+                <input type="text" class="char-skin" id="char-skin" value="Skin">
+
+                <label for="char-hair">Hair</label>
+                <input type="text" class="char-hair" id="char-hair" value="Hair">
+
+                <label for="char-eyes">Eyes</label>
+                <input type="text" class="char-eyes" id="char-eyes" value="Eyes">
+
+                <label for="char-antecedent">Antecedent</label>
+                <input type="text" class="char-antecedent" id="char-antecedent" value="Antecedent">
+
+                <label for="char-deity">Deity</label>
+                <input type="text" class="char-deity" id="char-deity" value="Deity">
+
+                <label for="char-size">Size</label>
+                <select name="char-size" id="char-size">
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="char-height">Height</label>
+                <input type="number" class="char-height" id="char-height" value="0">
+
+                <label for="char-weight">Weight</label>
+                <input type="number" class="char-weight" id="char-weight" value="0">
+            
+                <label for="level">Level</label>
+                <input type="number" class="level" id="level" value="0">
+
+                <label for="level">Experience</label>
+                <input type="number" class="level" id="level" value="0">
+            
+            </div>
         </header>
 
         <div class="attributes">
@@ -20,14 +97,60 @@
             <div class="att-physical">
                 <div class="att-major">
                     <h2>Physical</h2>
+                    <label for="phy-bonus">Physical Bonus</label>
+                    <input type="number" class="phy-bonus" id="phy-bonus" value="0">
                 </div>
                 
                 <div class="att-minor">
                     <ul>
-                        <li>Strengh</li>
-                        <li>Dexterity</li>
-                        <li>Agility</li>
-                        <li>Resistance</li>
+                        <li class="str">
+                            <p>Strengh (STR)</p>
+                            <div class="str-bonus">
+                                <label for="str-bonus">Strengh Bonus</label>
+                                <input type="number" class="str-bonus" id="str-bonus" value="0">
+                            </div>
+                            <div class="str-total">
+                                <label for="str-total">Strengh Total</label>
+                                <input type="number" class="str-total" id="str-total" value="0">
+                            </div>
+                        </li>
+                        
+                        <li class="dex">
+                            <p>Dexterity (DEX)</p>
+                            <div class="dex-bonus">
+                                <label for="dex-bonus">Dexterity Bonus</label>
+                                <input type="number" class="dex-bonus" id="dex-bonus" value="0">
+                            </div>
+                            <div class="dex-total">
+                                <label for="dex-total">Dexterity Total</label>
+                                <input type="number" class="dex-total" id="dex-total" value="0">
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <p>Agility (AGI)</p>
+                            <div class="agi-bonus">
+                                <label for="agi-bonus">Agility Bonus</label>
+                                <input type="number" class="agi-bonus" id="agi-bonus" value="0">
+                            </div>
+                            <div class="agi-total">
+                                <label for="agi-total">Agility Total</label>
+                                <input type="number" class="agi-total" id="agi-total" value="0">
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>Resistance (RES)</p>
+                            <div class="res-bonus">
+                                <label for="res-bonus">Resistance Bonus</label>
+                                <input type="number" class="res-bonus" id="res-bonus" value="0">
+                            </div>
+                            <div class="res-total">
+                                <label for="res-total">Resistance Total</label>
+                                <input type="number" class="res-total" id="res-total" value="0">
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </div>
